@@ -170,12 +170,6 @@
     <ClInclude Include="Sprite.h">
       <Filter>Engine\ヘッダー ファイル\2D\Sprite</Filter>
     </ClInclude>
-    <ClInclude Include="resource.h">
-      <Filter>Engine\ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="resource1.h">
-      <Filter>Engine\ヘッダー ファイル</Filter>
-    </ClInclude>
     <ClInclude Include="resouce.h">
       <Filter>Engine\リソース ファイル</Filter>
     </ClInclude>
