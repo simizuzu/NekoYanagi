@@ -1,77 +1,159 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="ソース ファイル">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{a0bd5cb3-2fd1-45f7-930e-775c445f6ec1}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ヘッダー ファイル">
+    <Filter Include="Engine\リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Engine\ヘッダー ファイル">
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="リソース ファイル">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="Engine\ヘッダー ファイル\2D">
+      <UniqueIdentifier>{4e3b4ac3-b155-4e72-a54a-3dad1e8a3722}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ヘッダー ファイル\3D">
+      <UniqueIdentifier>{b4dafc5f-3c4e-47e5-8298-c28f86953d14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ヘッダー ファイル\Audio">
+      <UniqueIdentifier>{499bbefb-a135-41ae-b227-b146af9657bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ヘッダー ファイル\Camera">
+      <UniqueIdentifier>{87e9e5e9-0f31-40fe-8d85-d46119c49f48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ヘッダー ファイル\Collision">
+      <UniqueIdentifier>{a1bbf091-a973-4b50-98f7-ed725f3bf40a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ヘッダー ファイル\Base">
+      <UniqueIdentifier>{ce52f925-402c-4b90-af21-247cdfcfd343}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ヘッダー ファイル\Imgui">
+      <UniqueIdentifier>{0d025cbc-e379-4c75-8d97-5e165141c334}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ヘッダー ファイル\Input">
+      <UniqueIdentifier>{dca1e621-25c2-4503-b318-1b1b7c92054c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ヘッダー ファイル\Math">
+      <UniqueIdentifier>{ea72ce41-664e-4305-bf61-d4789a40696b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ヘッダー ファイル\Scene">
+      <UniqueIdentifier>{98508af0-2a98-4059-a8cb-a0a2308528ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Engine\ソース ファイル\2D">
+      <UniqueIdentifier>{863e79eb-cf54-4b3e-ab91-62e47de1edcc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ソース ファイル\3D">
+      <UniqueIdentifier>{1be5e7d7-46b3-4b40-87df-76182e24d18a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ソース ファイル\Audio">
+      <UniqueIdentifier>{bcd0cee6-8400-4d86-86da-a1996ae12d5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ソース ファイル\Base">
+      <UniqueIdentifier>{823f7140-3727-4166-baa1-f33097e0794c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ソース ファイル\Camera">
+      <UniqueIdentifier>{00329c81-4171-469b-824f-db19a4b26c8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ソース ファイル\Collision">
+      <UniqueIdentifier>{fb4aa9ec-240e-431a-b154-a9c315669e5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ソース ファイル\Imgui">
+      <UniqueIdentifier>{1adadb83-b1c1-4de0-9c6f-2308e016d2e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ソース ファイル\Input">
+      <UniqueIdentifier>{55b69e0e-eb89-42c4-9a1f-d7d59e630026}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ソース ファイル\Math">
+      <UniqueIdentifier>{0f0899f6-940e-4264-ae77-1c538396dfe4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ソース ファイル\Scene">
+      <UniqueIdentifier>{36603486-9c5f-43b5-a90f-36a092b66531}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application">
+      <UniqueIdentifier>{b63d058e-c619-47ea-b071-f28a9221c11b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\ソースファイル">
+      <UniqueIdentifier>{ee96e9ff-80b9-4965-a49b-8ea9947cebc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\ヘッダーファイル">
+      <UniqueIdentifier>{bf20ba8e-fee5-49e5-9b76-8396be8b02c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\ヘッダーファイル\Base">
+      <UniqueIdentifier>{a893f079-be27-49e1-ab6a-0b2b3ceb96be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\ヘッダーファイル\Scene">
+      <UniqueIdentifier>{5f5e8410-1f29-4e9d-a1b7-8def2ee6d303}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\ソースファイル\Base">
+      <UniqueIdentifier>{f96af5c4-36d5-400f-965d-17847883b1aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\ソースファイル\Scene">
+      <UniqueIdentifier>{e5ab6253-a581-48b5-99c0-c6d95867cda7}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="WinApp.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="FPS.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="ImGuiManager.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="DirectXCommon.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="Input.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="Keyboard.cpp">
-      <Filter>ソース ファイル</Filter>
+      <Filter>Engine\ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="Controller.cpp">
-      <Filter>ソース ファイル</Filter>
+      <Filter>Engine\ソース ファイル\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>Engine\ソース ファイル\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Keyboard.cpp">
+      <Filter>Engine\ソース ファイル\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGuiManager.cpp">
+      <Filter>Engine\ソース ファイル\Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXCommon.cpp">
+      <Filter>Engine\ソース ファイル\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="WinApp.cpp">
+      <Filter>Engine\ソース ファイル\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="FPS.cpp">
+      <Filter>Engine\ソース ファイル\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="GameScene.cpp">
+      <Filter>Application\ソースファイル\Scene</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AvoidWarning.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="WinApp.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="resource.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="FPS.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="ImGuiManager.h">
-      <Filter>ヘッダー ファイル</Filter>
+      <Filter>Engine\ヘッダー ファイル\Base</Filter>
     </ClInclude>
     <ClInclude Include="DirectXCommon.h">
-      <Filter>ヘッダー ファイル</Filter>
+      <Filter>Engine\ヘッダー ファイル\Base</Filter>
     </ClInclude>
-    <ClInclude Include="Input.h">
-      <Filter>ヘッダー ファイル</Filter>
+    <ClInclude Include="FPS.h">
+      <Filter>Engine\ヘッダー ファイル\Base</Filter>
     </ClInclude>
-    <ClInclude Include="Keyboard.h">
-      <Filter>ヘッダー ファイル</Filter>
+    <ClInclude Include="WinApp.h">
+      <Filter>Engine\ヘッダー ファイル\Base</Filter>
     </ClInclude>
     <ClInclude Include="Controller.h">
-      <Filter>ヘッダー ファイル</Filter>
+      <Filter>Engine\ヘッダー ファイル\Input</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="NekoYanagi.rc">
-      <Filter>リソース ファイル</Filter>
-    </ResourceCompile>
+    <ClInclude Include="Input.h">
+      <Filter>Engine\ヘッダー ファイル\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Keyboard.h">
+      <Filter>Engine\ヘッダー ファイル\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGuiManager.h">
+      <Filter>Engine\ヘッダー ファイル\Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScene.h">
+      <Filter>Application\ヘッダーファイル\Scene</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

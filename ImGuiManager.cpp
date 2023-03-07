@@ -1,5 +1,8 @@
 #include "ImGuiManager.h"
 
+ImGuiManager::ImGuiManager() {}
+ImGuiManager::~ImGuiManager(){}
+
 void ImGuiManager::Initialize(WinApp* winApp, DirectXCommon* dxCommon)
 {
 	HRESULT result;
@@ -35,17 +38,6 @@ void ImGuiManager::Initialize(WinApp* winApp, DirectXCommon* dxCommon)
 	io.Fonts->AddFontDefault();
 }
 
-void ImGuiManager::Draw(DirectXCommon* dxCommon)
-{
-	ID3D12GraphicsCommandList* cmdList = dxCommon->GetCommandList();
-
-	// デスクリプタヒープの配列をセットするコマンド
-	ID3D12DescriptorHeap* ppHeaps[] = { srvHeap_.Get() };
-	cmdList->SetDescriptorHeaps(_countof(ppHeaps), ppHeaps);
-	// 描画コマンドを発行
-	ImGui_ImplDX12_RenderDrawData(ImGui::GetDrawData(), cmdList);
-}
-
 void ImGuiManager::Begin()
 {
 	// ImGuiフレーム開始
@@ -58,6 +50,17 @@ void ImGuiManager::End()
 {
 	// 描画前準備
 	ImGui::Render();
+}
+
+void ImGuiManager::Draw(DirectXCommon* dxCommon)
+{
+	ID3D12GraphicsCommandList* cmdList = dxCommon->GetCommandList();
+
+	// デスクリプタヒープの配列をセットするコマンド
+	ID3D12DescriptorHeap* ppHeaps[] = { srvHeap_.Get() };
+	cmdList->SetDescriptorHeaps(_countof(ppHeaps), ppHeaps);
+	// 描画コマンドを発行
+	ImGui_ImplDX12_RenderDrawData(ImGui::GetDrawData(), cmdList);
 }
 
 void ImGuiManager::Finalize()
@@ -77,6 +80,3 @@ ImGuiManager* ImGuiManager::GetInstance()
 
 	return &imGuiManager;
 }
-
-ImGuiManager::ImGuiManager(){}
-ImGuiManager::~ImGuiManager(){}
