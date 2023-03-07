@@ -1,4 +1,5 @@
 #include "WinApp.h"
+#include "resouce.h"
 
 #pragma comment(lib,"winmm.lib")
 
@@ -33,6 +34,7 @@ void WinApp::Initialize()
 	w.lpszClassName = L"Engine";				// ウィンドウクラス名（ヘッダーで名前変更可能）
 	w.hInstance = GetModuleHandle(nullptr);		// ウィンドウハンドル
 	w.hCursor = LoadCursor(NULL, IDC_ARROW);	// カーソル設定
+	w.hIcon = LoadIcon(GetModuleHandle(nullptr), TEXT("ICO"));
 
 	// ウィンドウクラスをOSに登録する
 	RegisterClassEx(&w);

@@ -97,6 +97,15 @@
     <Filter Include="Application\ソースファイル\Scene">
       <UniqueIdentifier>{e5ab6253-a581-48b5-99c0-c6d95867cda7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Engine\シェーダーファイル">
+      <UniqueIdentifier>{6e188371-8290-4ff9-91bd-0d07c406cccd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ソース ファイル\2D\Sprite">
+      <UniqueIdentifier>{dcc6a06d-c849-4d69-ba85-ec8c8ebc3c79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ヘッダー ファイル\2D\Sprite">
+      <UniqueIdentifier>{b49252b4-9fb8-45ee-9895-730916d303bc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -125,6 +134,9 @@
     </ClCompile>
     <ClCompile Include="GameScene.cpp">
       <Filter>Application\ソースファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>Engine\ソース ファイル\2D\Sprite</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -155,5 +167,40 @@
     <ClInclude Include="GameScene.h">
       <Filter>Application\ヘッダーファイル\Scene</Filter>
     </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>Engine\ヘッダー ファイル\2D\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Engine\ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="resource1.h">
+      <Filter>Engine\ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="resouce.h">
+      <Filter>Engine\リソース ファイル</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sprite.hlsli">
+      <Filter>Engine\シェーダーファイル</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="SpriteVS.hlsl">
+      <Filter>Engine\シェーダーファイル</Filter>
+    </FxCompile>
+    <FxCompile Include="SpritePS.hlsl">
+      <Filter>Engine\シェーダーファイル</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="NekoYanagi.rc">
+      <Filter>Engine\リソース ファイル</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon.ico">
+      <Filter>Engine\リソース ファイル</Filter>
+    </Image>
   </ItemGroup>
 </Project>
