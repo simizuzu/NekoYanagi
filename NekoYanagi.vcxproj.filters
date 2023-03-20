@@ -106,6 +106,12 @@
     <Filter Include="Engine\ヘッダー ファイル\2D\Sprite">
       <UniqueIdentifier>{b49252b4-9fb8-45ee-9895-730916d303bc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Engine\ソース ファイル\2D\Primitive">
+      <UniqueIdentifier>{7066669e-9e51-496b-b255-47bad3a3bfab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ヘッダー ファイル\2D\Primitive">
+      <UniqueIdentifier>{2292ee32-74ca-4922-be9c-39264f6f6cb4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -137,6 +143,18 @@
     </ClCompile>
     <ClCompile Include="Sprite.cpp">
       <Filter>Engine\ソース ファイル\2D\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="Matrix4.cpp">
+      <Filter>Engine\ソース ファイル\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector2.cpp">
+      <Filter>Engine\ソース ファイル\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector3.cpp">
+      <Filter>Engine\ソース ファイル\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector4.cpp">
+      <Filter>Engine\ソース ファイル\Math</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -172,6 +190,18 @@
     </ClInclude>
     <ClInclude Include="resouce.h">
       <Filter>Engine\リソース ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix4.h">
+      <Filter>Engine\ヘッダー ファイル\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2.h">
+      <Filter>Engine\ヘッダー ファイル\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector3.h">
+      <Filter>Engine\ヘッダー ファイル\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector4.h">
+      <Filter>Engine\ヘッダー ファイル\Math</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
