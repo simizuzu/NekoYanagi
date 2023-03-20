@@ -10,7 +10,7 @@ void GameScene::Initalize()
 
 void GameScene::Update()
 {
-	ImGui::ShowDemoWindow();
+	//ImGui::ShowDemoWindow();
 }
 
 void GameScene::Draw()
