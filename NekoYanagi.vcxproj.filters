@@ -159,6 +159,24 @@
     <ClCompile Include="TextureManager.cpp">
       <Filter>Engine\ソース ファイル\Base</Filter>
     </ClCompile>
+    <ClCompile Include="NekoYanagiMath.cpp">
+      <Filter>Engine\ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite3D.cpp">
+      <Filter>Engine\ソース ファイル\2D\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite2D.cpp">
+      <Filter>Engine\ソース ファイル\2D\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="PipelineState.cpp">
+      <Filter>Engine\ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="RootSignature.cpp">
+      <Filter>Engine\ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Material.cpp">
+      <Filter>Engine\ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AvoidWarning.h">
@@ -206,11 +224,29 @@
     <ClInclude Include="Vector4.h">
       <Filter>Engine\ヘッダー ファイル\Math</Filter>
     </ClInclude>
-    <ClInclude Include="NYUtility.h">
+    <ClInclude Include="NekoYanagiUtility.h">
       <Filter>Engine\ヘッダー ファイル\Base</Filter>
     </ClInclude>
     <ClInclude Include="TextureManager.h">
       <Filter>Engine\ヘッダー ファイル\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="NekoYanagiMath.h">
+      <Filter>Engine\ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite2D.h">
+      <Filter>Engine\ヘッダー ファイル\2D\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite3D.h">
+      <Filter>Engine\ヘッダー ファイル\2D\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="PipelineState.h">
+      <Filter>Engine\ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="RootSignature.h">
+      <Filter>Engine\ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Material.h">
+      <Filter>Engine\ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

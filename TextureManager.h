@@ -1,6 +1,6 @@
 #pragma once
 #include "DirectXCommon.h"
-#include "NYUtility.h"
+#include "NekoYanagiUtility.h"
 
 #include "AvoidWarning.h"
 
