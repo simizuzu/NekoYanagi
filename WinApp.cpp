@@ -1,5 +1,6 @@
 #include "WinApp.h"
 #include "resouce.h"
+#include "Input.h"
 
 #pragma comment(lib,"winmm.lib")
 
@@ -76,6 +77,10 @@ bool WinApp::ProccessMessage()
 
 	//×ボタンで終了メッセージが来たらゲームループを抜ける
 	if (msg.message == WM_QUIT)
+	{
+		return true;
+	}
+	else if (Input::GetInstance()->TriggerPushKey(DIK_ESCAPE))
 	{
 		return true;
 	}

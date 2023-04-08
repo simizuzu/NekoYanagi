@@ -5,13 +5,14 @@
 #include "ImGuiManager.h"
 #include "FPS.h"
 #include "GameScene.h"
+#include "Input.h"
 
 int WINAPI WinMain(_In_ HINSTANCE, _In_opt_ HINSTANCE, _In_ LPSTR, _In_ int)
 {
 	WinApp* winApp = WinApp::GetInstance();
 	DirectXCommon* dxCommon = DirectXCommon::GetInstance();
 	ImGuiManager* imGuiManager = ImGuiManager::GetInstance();
-
+	Input* input = Input::GetInstance();
 
 	FPS* fps = new FPS();
 	GameScene* gameScene = new GameScene();
@@ -21,6 +22,7 @@ int WINAPI WinMain(_In_ HINSTANCE, _In_opt_ HINSTANCE, _In_ LPSTR, _In_ int)
 	fps->InitializeFixFps();
 	dxCommon->Initialize();
 	imGuiManager->Initialize(winApp, dxCommon);
+	input->Initialize();
 
 	gameScene->Initalize();
 
@@ -31,6 +33,8 @@ int WINAPI WinMain(_In_ HINSTANCE, _In_opt_ HINSTANCE, _In_ LPSTR, _In_ int)
 
 		// ƒQ[ƒ€ƒV[ƒ“ //
 		gameScene->Update();
+
+		input->Update();
 
 		imGuiManager->End();
 

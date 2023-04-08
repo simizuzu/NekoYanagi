@@ -168,13 +168,10 @@
     <ClCompile Include="Sprite2D.cpp">
       <Filter>Engine\ソース ファイル\2D\Sprite</Filter>
     </ClCompile>
-    <ClCompile Include="PipelineState.cpp">
+    <ClCompile Include="Shader.cpp">
       <Filter>Engine\ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="RootSignature.cpp">
-      <Filter>Engine\ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="Material.cpp">
+    <ClCompile Include="Pipeline.cpp">
       <Filter>Engine\ソース ファイル</Filter>
     </ClCompile>
   </ItemGroup>
@@ -239,13 +236,10 @@
     <ClInclude Include="Sprite3D.h">
       <Filter>Engine\ヘッダー ファイル\2D\Sprite</Filter>
     </ClInclude>
-    <ClInclude Include="PipelineState.h">
+    <ClInclude Include="Shader.h">
       <Filter>Engine\ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="RootSignature.h">
-      <Filter>Engine\ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="Material.h">
+    <ClInclude Include="Pipeline.h">
       <Filter>Engine\ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>
