@@ -6,11 +6,15 @@ GameScene::~GameScene() {}
 
 void GameScene::Initalize()
 {
+	camera_ = std::make_unique<Camera>();
+	camera_->Initialize();
 }
 
 void GameScene::Update()
 {
 	//ImGui::ShowDemoWindow();
+
+	camera_->Update();
 }
 
 void GameScene::Draw()

@@ -168,10 +168,13 @@
     <ClCompile Include="Sprite2D.cpp">
       <Filter>Engine\ソース ファイル\2D\Sprite</Filter>
     </ClCompile>
-    <ClCompile Include="Shader.cpp">
-      <Filter>Engine\ソース ファイル</Filter>
-    </ClCompile>
     <ClCompile Include="Pipeline.cpp">
+      <Filter>Engine\ソース ファイル\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp">
+      <Filter>Engine\ソース ファイル\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
       <Filter>Engine\ソース ファイル</Filter>
     </ClCompile>
   </ItemGroup>
@@ -236,10 +239,13 @@
     <ClInclude Include="Sprite3D.h">
       <Filter>Engine\ヘッダー ファイル\2D\Sprite</Filter>
     </ClInclude>
-    <ClInclude Include="Shader.h">
-      <Filter>Engine\ヘッダー ファイル</Filter>
-    </ClInclude>
     <ClInclude Include="Pipeline.h">
+      <Filter>Engine\ヘッダー ファイル\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>Engine\ヘッダー ファイル\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
       <Filter>Engine\ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>

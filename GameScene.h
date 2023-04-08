@@ -1,11 +1,12 @@
 #pragma once
+#include "Camera.h"
+
 class GameScene
 {
-public:
+public: //メンバ変数
 	//コンストラクタ・デストラクタ
 	GameScene();
 	~GameScene();
-
 	//初期化
 	void Initalize();
 
@@ -18,7 +19,11 @@ public:
 	//終了処理
 	void Finalize();
 
-private:
+private: //メンバ変数
+	std::unique_ptr<Camera> camera_;
 
+private:
+	GameScene(const GameScene&) = delete;
+	const GameScene& operator=(const GameScene&) = delete;
 };
 
