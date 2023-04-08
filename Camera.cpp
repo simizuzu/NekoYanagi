@@ -65,6 +65,7 @@ void Camera::Map()
 }
 
 void Camera::UpdateMatrix()
+
 {
 	// ƒrƒ…[s—ñ‚Ì¶¬
 	matView_ = NYMath::MakeLookAtLH(eye_, target_, up_);

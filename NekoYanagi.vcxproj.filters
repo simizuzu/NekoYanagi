@@ -159,9 +159,6 @@
     <ClCompile Include="TextureManager.cpp">
       <Filter>Engine\ソース ファイル\Base</Filter>
     </ClCompile>
-    <ClCompile Include="NekoYanagiMath.cpp">
-      <Filter>Engine\ソース ファイル</Filter>
-    </ClCompile>
     <ClCompile Include="Sprite3D.cpp">
       <Filter>Engine\ソース ファイル\2D\Sprite</Filter>
     </ClCompile>
@@ -175,6 +172,15 @@
       <Filter>Engine\ソース ファイル\Base</Filter>
     </ClCompile>
     <ClCompile Include="Camera.cpp">
+      <Filter>Engine\ソース ファイル\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="NekoYanagiMath.cpp">
+      <Filter>Engine\ソース ファイル\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldTransform.cpp">
+      <Filter>Engine\ソース ファイル\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleManager.cpp">
       <Filter>Engine\ソース ファイル</Filter>
     </ClCompile>
   </ItemGroup>
@@ -230,9 +236,6 @@
     <ClInclude Include="TextureManager.h">
       <Filter>Engine\ヘッダー ファイル\Base</Filter>
     </ClInclude>
-    <ClInclude Include="NekoYanagiMath.h">
-      <Filter>Engine\ヘッダー ファイル</Filter>
-    </ClInclude>
     <ClInclude Include="Sprite2D.h">
       <Filter>Engine\ヘッダー ファイル\2D\Sprite</Filter>
     </ClInclude>
@@ -246,21 +249,17 @@
       <Filter>Engine\ヘッダー ファイル\Base</Filter>
     </ClInclude>
     <ClInclude Include="Camera.h">
+      <Filter>Engine\ヘッダー ファイル\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="NekoYanagiMath.h">
+      <Filter>Engine\ヘッダー ファイル\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldTransform.h">
       <Filter>Engine\ヘッダー ファイル</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Sprite.hlsli">
-      <Filter>Engine\シェーダーファイル</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <FxCompile Include="SpriteVS.hlsl">
-      <Filter>Engine\シェーダーファイル</Filter>
-    </FxCompile>
-    <FxCompile Include="SpritePS.hlsl">
-      <Filter>Engine\シェーダーファイル</Filter>
-    </FxCompile>
+    <ClInclude Include="ParticleManager.h">
+      <Filter>Engine\ヘッダー ファイル</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="NekoYanagi.rc">
@@ -271,5 +270,30 @@
     <Image Include="icon.ico">
       <Filter>Engine\リソース ファイル</Filter>
     </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Resources\shaders\ParticlePS.hlsl">
+      <Filter>Engine\シェーダーファイル</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\shaders\PaticleVS.hlsl">
+      <Filter>Engine\シェーダーファイル</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\shaders\SpritePS.hlsl">
+      <Filter>Engine\シェーダーファイル</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\shaders\SpriteVS.hlsl">
+      <Filter>Engine\シェーダーファイル</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\shaders\ParticleGS.hlsl">
+      <Filter>Engine\シェーダーファイル</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shaders\Sprite.hlsli">
+      <Filter>Engine\シェーダーファイル</Filter>
+    </None>
+    <None Include="Resources\shaders\Particle.hlsli">
+      <Filter>Engine\シェーダーファイル</Filter>
+    </None>
   </ItemGroup>
 </Project>

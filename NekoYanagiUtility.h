@@ -22,7 +22,7 @@ struct PosUvColor
 };
 
 //定数バッファ用データ構造体
-struct ConstBufferDataB0
+struct ConstBufferDataWorldTransform
 {
 	NYMath::Matrix4 mat;	// 3D変換行列
 };
@@ -43,6 +43,17 @@ struct ConstBufferDataViewProjection
 	NYMath::Vector3 cameraPos;
 };
 
+//カメラ構造体
+struct WorldvViewProCamera
+{
+	//ワールド行列
+	NYMath::Matrix4 world;
+	//ワールド座標
+	NYMath::Matrix4 matWorld;
+	//カメラ座標(ワールド座標)
+	NYMath::Vector3 cameraPos;
+};
+
 //ビュープロジェクション
 struct ViewProjection
 {
@@ -50,6 +61,13 @@ struct ViewProjection
 	Microsoft::WRL::ComPtr<ID3D12Resource> constBuff_;
 	//マッピング済みアドレス
 	ConstBufferDataViewProjection* constBuffMap = nullptr;
+};
+
+struct VertexPos
+{
+	NYMath::Vector3 pos;	//xyz座標
+	float scale;			//スケール
+	NYMath::Vector4 color;	//色
 };
 
 struct VertexPosNormalUv
