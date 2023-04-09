@@ -20,6 +20,7 @@ void GameScene::Update()
 	//ImGui::ShowDemoWindow();
 
 	camera_->Update();
+	camera_->SetTarget({1.0f,0.0f,0.0f});
 	particles->RandParticle();
 	particles->Update();
 
@@ -28,7 +29,6 @@ void GameScene::Update()
 
 void GameScene::Draw()
 {
-
 	particles->Draw(&transform);
 }
 

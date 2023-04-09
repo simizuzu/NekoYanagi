@@ -203,9 +203,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="resouce.h">
-      <Filter>Engine\リソース ファイル</Filter>
-    </ClInclude>
     <ClInclude Include="lib\Engine\2D\Sprite\Sprite.h">
       <Filter>Engine\ヘッダー ファイル\2D\Sprite</Filter>
     </ClInclude>
@@ -277,6 +274,9 @@
     </ClInclude>
     <ClInclude Include="lib\Engine\Scene\GameScene.h">
       <Filter>Application\ヘッダーファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="resouce.h">
+      <Filter>Engine\リソース ファイル</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
