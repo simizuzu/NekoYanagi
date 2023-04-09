@@ -112,153 +112,171 @@
     <Filter Include="Engine\ヘッダー ファイル\2D\Primitive">
       <UniqueIdentifier>{2292ee32-74ca-4922-be9c-39264f6f6cb4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Engine\ソース ファイル\3D\Model">
+      <UniqueIdentifier>{3814f231-a705-4e97-a64f-7ce37e2edd33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ソース ファイル\3D\Particle">
+      <UniqueIdentifier>{222eeeb7-be2b-49ee-8b63-76ef2f8c78e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ヘッダー ファイル\3D\Model">
+      <UniqueIdentifier>{2a4bc482-0604-4083-918e-6e4cddb79eb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ヘッダー ファイル\3D\Particle">
+      <UniqueIdentifier>{12d3bd12-2bd7-40b8-8330-87b5f670a881}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ソース ファイル\3D\Sprite">
+      <UniqueIdentifier>{4378a01c-a71c-46a5-8cc8-83149a12c084}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ヘッダー ファイル\3D\Sprite">
+      <UniqueIdentifier>{acc094d3-024b-42d0-b185-a59f54bb2921}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Engine\ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="Controller.cpp">
-      <Filter>Engine\ソース ファイル\Input</Filter>
-    </ClCompile>
-    <ClCompile Include="Input.cpp">
-      <Filter>Engine\ソース ファイル\Input</Filter>
-    </ClCompile>
-    <ClCompile Include="Keyboard.cpp">
-      <Filter>Engine\ソース ファイル\Input</Filter>
-    </ClCompile>
-    <ClCompile Include="ImGuiManager.cpp">
-      <Filter>Engine\ソース ファイル\Imgui</Filter>
-    </ClCompile>
-    <ClCompile Include="DirectXCommon.cpp">
-      <Filter>Engine\ソース ファイル\Base</Filter>
-    </ClCompile>
-    <ClCompile Include="WinApp.cpp">
-      <Filter>Engine\ソース ファイル\Base</Filter>
-    </ClCompile>
-    <ClCompile Include="FPS.cpp">
-      <Filter>Engine\ソース ファイル\Base</Filter>
-    </ClCompile>
-    <ClCompile Include="GameScene.cpp">
-      <Filter>Application\ソースファイル\Scene</Filter>
-    </ClCompile>
-    <ClCompile Include="Sprite.cpp">
+    <ClCompile Include="lib\Engine\2D\Sprite\Sprite.cpp">
       <Filter>Engine\ソース ファイル\2D\Sprite</Filter>
     </ClCompile>
-    <ClCompile Include="Matrix4.cpp">
-      <Filter>Engine\ソース ファイル\Math</Filter>
-    </ClCompile>
-    <ClCompile Include="Vector2.cpp">
-      <Filter>Engine\ソース ファイル\Math</Filter>
-    </ClCompile>
-    <ClCompile Include="Vector3.cpp">
-      <Filter>Engine\ソース ファイル\Math</Filter>
-    </ClCompile>
-    <ClCompile Include="Vector4.cpp">
-      <Filter>Engine\ソース ファイル\Math</Filter>
-    </ClCompile>
-    <ClCompile Include="TextureManager.cpp">
-      <Filter>Engine\ソース ファイル\Base</Filter>
-    </ClCompile>
-    <ClCompile Include="Sprite3D.cpp">
+    <ClCompile Include="lib\Engine\2D\Sprite\Sprite2D.cpp">
       <Filter>Engine\ソース ファイル\2D\Sprite</Filter>
     </ClCompile>
-    <ClCompile Include="Sprite2D.cpp">
-      <Filter>Engine\ソース ファイル\2D\Sprite</Filter>
+    <ClCompile Include="lib\Engine\3D\Particle\ParticleManager.cpp">
+      <Filter>Engine\ソース ファイル\3D\Particle</Filter>
     </ClCompile>
-    <ClCompile Include="Pipeline.cpp">
-      <Filter>Engine\ソース ファイル\Base</Filter>
+    <ClCompile Include="lib\Engine\3D\Sprite\Sprite3D.cpp">
+      <Filter>Engine\ソース ファイル\3D\Sprite</Filter>
     </ClCompile>
-    <ClCompile Include="Shader.cpp">
-      <Filter>Engine\ソース ファイル\Base</Filter>
-    </ClCompile>
-    <ClCompile Include="Camera.cpp">
-      <Filter>Engine\ソース ファイル\Camera</Filter>
-    </ClCompile>
-    <ClCompile Include="NekoYanagiMath.cpp">
-      <Filter>Engine\ソース ファイル\Math</Filter>
-    </ClCompile>
-    <ClCompile Include="WorldTransform.cpp">
+    <ClCompile Include="lib\Engine\3D\WorldTransform.cpp">
       <Filter>Engine\ソース ファイル\3D</Filter>
     </ClCompile>
-    <ClCompile Include="ParticleManager.cpp">
-      <Filter>Engine\ソース ファイル</Filter>
+    <ClCompile Include="lib\Engine\Base\WinApp.cpp">
+      <Filter>Engine\ソース ファイル\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Engine\Base\DirectXCommon.cpp">
+      <Filter>Engine\ソース ファイル\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Engine\Base\FPS.cpp">
+      <Filter>Engine\ソース ファイル\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Engine\ソース ファイル\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Engine\Base\Pipeline.cpp">
+      <Filter>Engine\ソース ファイル\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Engine\Base\Shader.cpp">
+      <Filter>Engine\ソース ファイル\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Engine\Base\TextureManager.cpp">
+      <Filter>Engine\ソース ファイル\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Engine\Camera\Camera.cpp">
+      <Filter>Engine\ソース ファイル\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Engine\Imgui\ImGuiManager.cpp">
+      <Filter>Engine\ソース ファイル\Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Engine\Input\Keyboard.cpp">
+      <Filter>Engine\ソース ファイル\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Engine\Input\Input.cpp">
+      <Filter>Engine\ソース ファイル\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Engine\Input\Controller.cpp">
+      <Filter>Engine\ソース ファイル\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Engine\Math\Vector4.cpp">
+      <Filter>Engine\ソース ファイル\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Engine\Math\Matrix4.cpp">
+      <Filter>Engine\ソース ファイル\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Engine\Math\NekoYanagiMath.cpp">
+      <Filter>Engine\ソース ファイル\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Engine\Math\Vector2.cpp">
+      <Filter>Engine\ソース ファイル\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Engine\Math\Vector3.cpp">
+      <Filter>Engine\ソース ファイル\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\Engine\Scene\GameScene.cpp">
+      <Filter>Application\ソースファイル\Scene</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AvoidWarning.h">
-      <Filter>Engine\ヘッダー ファイル\Base</Filter>
-    </ClInclude>
-    <ClInclude Include="DirectXCommon.h">
-      <Filter>Engine\ヘッダー ファイル\Base</Filter>
-    </ClInclude>
-    <ClInclude Include="FPS.h">
-      <Filter>Engine\ヘッダー ファイル\Base</Filter>
-    </ClInclude>
-    <ClInclude Include="WinApp.h">
-      <Filter>Engine\ヘッダー ファイル\Base</Filter>
-    </ClInclude>
-    <ClInclude Include="Controller.h">
-      <Filter>Engine\ヘッダー ファイル\Input</Filter>
-    </ClInclude>
-    <ClInclude Include="Input.h">
-      <Filter>Engine\ヘッダー ファイル\Input</Filter>
-    </ClInclude>
-    <ClInclude Include="Keyboard.h">
-      <Filter>Engine\ヘッダー ファイル\Input</Filter>
-    </ClInclude>
-    <ClInclude Include="ImGuiManager.h">
-      <Filter>Engine\ヘッダー ファイル\Imgui</Filter>
-    </ClInclude>
-    <ClInclude Include="GameScene.h">
-      <Filter>Application\ヘッダーファイル\Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="Sprite.h">
-      <Filter>Engine\ヘッダー ファイル\2D\Sprite</Filter>
-    </ClInclude>
     <ClInclude Include="resouce.h">
       <Filter>Engine\リソース ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="Matrix4.h">
-      <Filter>Engine\ヘッダー ファイル\Math</Filter>
-    </ClInclude>
-    <ClInclude Include="Vector2.h">
-      <Filter>Engine\ヘッダー ファイル\Math</Filter>
-    </ClInclude>
-    <ClInclude Include="Vector3.h">
-      <Filter>Engine\ヘッダー ファイル\Math</Filter>
-    </ClInclude>
-    <ClInclude Include="Vector4.h">
-      <Filter>Engine\ヘッダー ファイル\Math</Filter>
-    </ClInclude>
-    <ClInclude Include="NekoYanagiUtility.h">
-      <Filter>Engine\ヘッダー ファイル\Base</Filter>
-    </ClInclude>
-    <ClInclude Include="TextureManager.h">
-      <Filter>Engine\ヘッダー ファイル\Base</Filter>
-    </ClInclude>
-    <ClInclude Include="Sprite2D.h">
+    <ClInclude Include="lib\Engine\2D\Sprite\Sprite.h">
       <Filter>Engine\ヘッダー ファイル\2D\Sprite</Filter>
     </ClInclude>
-    <ClInclude Include="Sprite3D.h">
+    <ClInclude Include="lib\Engine\2D\Sprite\Sprite2D.h">
       <Filter>Engine\ヘッダー ファイル\2D\Sprite</Filter>
     </ClInclude>
-    <ClInclude Include="Pipeline.h">
+    <ClInclude Include="lib\Engine\3D\Particle\ParticleManager.h">
+      <Filter>Engine\ヘッダー ファイル\3D\Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Engine\3D\Sprite\Sprite3D.h">
+      <Filter>Engine\ヘッダー ファイル\3D\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Engine\3D\WorldTransform.h">
+      <Filter>Engine\ヘッダー ファイル\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Engine\Base\WinApp.h">
       <Filter>Engine\ヘッダー ファイル\Base</Filter>
     </ClInclude>
-    <ClInclude Include="Shader.h">
+    <ClInclude Include="lib\Engine\Base\AvoidWarning.h">
       <Filter>Engine\ヘッダー ファイル\Base</Filter>
     </ClInclude>
-    <ClInclude Include="Camera.h">
+    <ClInclude Include="lib\Engine\Base\DirectXCommon.h">
+      <Filter>Engine\ヘッダー ファイル\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Engine\Base\FPS.h">
+      <Filter>Engine\ヘッダー ファイル\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Engine\Base\NekoYanagiUtility.h">
+      <Filter>Engine\ヘッダー ファイル\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Engine\Base\Pipeline.h">
+      <Filter>Engine\ヘッダー ファイル\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Engine\Base\Shader.h">
+      <Filter>Engine\ヘッダー ファイル\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Engine\Base\TextureManager.h">
+      <Filter>Engine\ヘッダー ファイル\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Engine\Camera\Camera.h">
       <Filter>Engine\ヘッダー ファイル\Camera</Filter>
     </ClInclude>
-    <ClInclude Include="NekoYanagiMath.h">
+    <ClInclude Include="lib\Engine\Imgui\ImGuiManager.h">
+      <Filter>Engine\ヘッダー ファイル\Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Engine\Input\Keyboard.h">
+      <Filter>Engine\ヘッダー ファイル\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Engine\Input\Controller.h">
+      <Filter>Engine\ヘッダー ファイル\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Engine\Input\Input.h">
+      <Filter>Engine\ヘッダー ファイル\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Engine\Math\Vector3.h">
       <Filter>Engine\ヘッダー ファイル\Math</Filter>
     </ClInclude>
-    <ClInclude Include="WorldTransform.h">
-      <Filter>Engine\ヘッダー ファイル</Filter>
+    <ClInclude Include="lib\Engine\Math\Vector4.h">
+      <Filter>Engine\ヘッダー ファイル\Math</Filter>
     </ClInclude>
-    <ClInclude Include="ParticleManager.h">
-      <Filter>Engine\ヘッダー ファイル</Filter>
+    <ClInclude Include="lib\Engine\Math\Matrix4.h">
+      <Filter>Engine\ヘッダー ファイル\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Engine\Math\NekoYanagiMath.h">
+      <Filter>Engine\ヘッダー ファイル\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Engine\Math\Vector2.h">
+      <Filter>Engine\ヘッダー ファイル\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Engine\Scene\GameScene.h">
+      <Filter>Application\ヘッダーファイル\Scene</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -114,6 +114,7 @@
       <LanguageStandard>stdcpp20</LanguageStandard>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <DisableSpecificWarnings>5045;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>$(ProjectDir)lib\Engine\Scene;$(ProjectDir)lib\Engine\Math;$(ProjectDir)lib\Engine\Collision;$(ProjectDir)lib\Engine\Input;$(ProjectDir)lib\Engine\Ingui;$(ProjectDir)lib\Engine\Camera;$(ProjectDir)lib\Engine\Audio;$(ProjectDir)lib\Engine\3D\Sprite;$(ProjectDir)lib\Engine\3D\Particle;$(ProjectDir)lib\Engine\3D\Model;$(ProjectDir)lib\Engine\3D;$(ProjectDir)lib\Engine\2D;$(ProjectDir)lib\Engine\2D\Sprite;$(ProjectDir)lib\Engine\Base</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -132,6 +133,7 @@
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <DisableSpecificWarnings>5045;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>$(ProjectDir)lib\Engine\Scene;$(ProjectDir)lib\Engine\Math;$(ProjectDir)lib\Engine\Collision;$(ProjectDir)lib\Engine\Input;$(ProjectDir)lib\Engine\Ingui;$(ProjectDir)lib\Engine\Camera;$(ProjectDir)lib\Engine\Audio;$(ProjectDir)lib\Engine\3D\Sprite;$(ProjectDir)lib\Engine\3D\Particle;$(ProjectDir)lib\Engine\3D\Model;$(ProjectDir)lib\Engine\3D;$(ProjectDir)lib\Engine\2D;$(ProjectDir)lib\Engine\2D\Sprite;$(ProjectDir)lib\Engine\Base</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -141,61 +143,56 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Camera.cpp" />
-    <ClCompile Include="Controller.cpp" />
-    <ClCompile Include="DirectXCommon.cpp">
-      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5045</DisableSpecificWarnings>
-    </ClCompile>
-    <ClCompile Include="FPS.cpp" />
-    <ClCompile Include="GameScene.cpp" />
-    <ClCompile Include="ImGuiManager.cpp" />
-    <ClCompile Include="Input.cpp" />
-    <ClCompile Include="Keyboard.cpp" />
+    <ClCompile Include="lib\Engine\2D\Sprite\Sprite.cpp" />
+    <ClCompile Include="lib\Engine\2D\Sprite\Sprite2D.cpp" />
+    <ClCompile Include="lib\Engine\3D\Particle\ParticleManager.cpp" />
+    <ClCompile Include="lib\Engine\3D\Sprite\Sprite3D.cpp" />
+    <ClCompile Include="lib\Engine\3D\WorldTransform.cpp" />
+    <ClCompile Include="lib\Engine\Base\DirectXCommon.cpp" />
+    <ClCompile Include="lib\Engine\Base\FPS.cpp" />
+    <ClCompile Include="lib\Engine\Base\Pipeline.cpp" />
+    <ClCompile Include="lib\Engine\Base\Shader.cpp" />
+    <ClCompile Include="lib\Engine\Base\TextureManager.cpp" />
+    <ClCompile Include="lib\Engine\Base\WinApp.cpp" />
+    <ClCompile Include="lib\Engine\Camera\Camera.cpp" />
+    <ClCompile Include="lib\Engine\Imgui\ImGuiManager.cpp" />
+    <ClCompile Include="lib\Engine\Input\Controller.cpp" />
+    <ClCompile Include="lib\Engine\Input\Input.cpp" />
+    <ClCompile Include="lib\Engine\Input\Keyboard.cpp" />
+    <ClCompile Include="lib\Engine\Math\Matrix4.cpp" />
+    <ClCompile Include="lib\Engine\Math\NekoYanagiMath.cpp" />
+    <ClCompile Include="lib\Engine\Math\Vector2.cpp" />
+    <ClCompile Include="lib\Engine\Math\Vector3.cpp" />
+    <ClCompile Include="lib\Engine\Math\Vector4.cpp" />
+    <ClCompile Include="lib\Engine\Scene\GameScene.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Matrix4.cpp" />
-    <ClCompile Include="NekoYanagiMath.cpp" />
-    <ClCompile Include="ParticleManager.cpp" />
-    <ClCompile Include="Pipeline.cpp" />
-    <ClCompile Include="Shader.cpp" />
-    <ClCompile Include="Sprite.cpp" />
-    <ClCompile Include="Sprite2D.cpp" />
-    <ClCompile Include="Sprite3D.cpp" />
-    <ClCompile Include="TextureManager.cpp" />
-    <ClCompile Include="Vector2.cpp" />
-    <ClCompile Include="Vector3.cpp" />
-    <ClCompile Include="Vector4.cpp" />
-    <ClCompile Include="WinApp.cpp">
-      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-      </DisableSpecificWarnings>
-    </ClCompile>
-    <ClCompile Include="WorldTransform.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AvoidWarning.h" />
-    <ClInclude Include="Camera.h" />
-    <ClInclude Include="Controller.h" />
-    <ClInclude Include="DirectXCommon.h" />
-    <ClInclude Include="FPS.h" />
-    <ClInclude Include="GameScene.h" />
-    <ClInclude Include="ImGuiManager.h" />
-    <ClInclude Include="Input.h" />
-    <ClInclude Include="Keyboard.h" />
-    <ClInclude Include="Matrix4.h" />
-    <ClInclude Include="NekoYanagiMath.h" />
-    <ClInclude Include="NekoYanagiUtility.h" />
-    <ClInclude Include="ParticleManager.h" />
-    <ClInclude Include="Pipeline.h" />
+    <ClInclude Include="lib\Engine\2D\Sprite\Sprite.h" />
+    <ClInclude Include="lib\Engine\2D\Sprite\Sprite2D.h" />
+    <ClInclude Include="lib\Engine\3D\Particle\ParticleManager.h" />
+    <ClInclude Include="lib\Engine\3D\Sprite\Sprite3D.h" />
+    <ClInclude Include="lib\Engine\3D\WorldTransform.h" />
+    <ClInclude Include="lib\Engine\Base\AvoidWarning.h" />
+    <ClInclude Include="lib\Engine\Base\DirectXCommon.h" />
+    <ClInclude Include="lib\Engine\Base\FPS.h" />
+    <ClInclude Include="lib\Engine\Base\NekoYanagiUtility.h" />
+    <ClInclude Include="lib\Engine\Base\Pipeline.h" />
+    <ClInclude Include="lib\Engine\Base\Shader.h" />
+    <ClInclude Include="lib\Engine\Base\TextureManager.h" />
+    <ClInclude Include="lib\Engine\Base\WinApp.h" />
+    <ClInclude Include="lib\Engine\Camera\Camera.h" />
+    <ClInclude Include="lib\Engine\Imgui\ImGuiManager.h" />
+    <ClInclude Include="lib\Engine\Input\Controller.h" />
+    <ClInclude Include="lib\Engine\Input\Input.h" />
+    <ClInclude Include="lib\Engine\Input\Keyboard.h" />
+    <ClInclude Include="lib\Engine\Math\Matrix4.h" />
+    <ClInclude Include="lib\Engine\Math\NekoYanagiMath.h" />
+    <ClInclude Include="lib\Engine\Math\Vector2.h" />
+    <ClInclude Include="lib\Engine\Math\Vector3.h" />
+    <ClInclude Include="lib\Engine\Math\Vector4.h" />
+    <ClInclude Include="lib\Engine\Scene\GameScene.h" />
     <ClInclude Include="resouce.h" />
-    <ClInclude Include="Shader.h" />
-    <ClInclude Include="Sprite.h" />
-    <ClInclude Include="Sprite2D.h" />
-    <ClInclude Include="Sprite3D.h" />
-    <ClInclude Include="TextureManager.h" />
-    <ClInclude Include="Vector2.h" />
-    <ClInclude Include="Vector3.h" />
-    <ClInclude Include="Vector4.h" />
-    <ClInclude Include="WinApp.h" />
-    <ClInclude Include="WorldTransform.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="lib\External\imgui\imgui.vcxproj">

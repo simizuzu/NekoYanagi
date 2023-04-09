@@ -26,6 +26,8 @@ private: //ƒƒ“ƒo•Ï”
 	std::unique_ptr<ParticleManager> particles;
 
 	NYMath::Vector3 cameraEye;
+	char PAD1[4];
+
 	WorldTransform transform;
 private:
 	GameScene(const GameScene&) = delete;
