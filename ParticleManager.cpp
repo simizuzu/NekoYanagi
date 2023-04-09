@@ -56,7 +56,7 @@ void ParticleManager::CreateCraphicsPipeline()
 	Microsoft::WRL::ComPtr<ID3DBlob> gsBlob;
 
 	Shader::CreateParticleShade(vsBlob, psBlob, gsBlob);
-	Pipeline::CreatePaticlePipeline(vsBlob.Get(), psBlob.Get(), gsBlob.Get(), BlendMode::Add , device_.Get(), pip);
+	Pipeline::CreatePaticlePipeline(vsBlob.Get(), psBlob.Get(), gsBlob.Get(), device_.Get(), pip);
 }
 
 void ParticleManager::Update()
