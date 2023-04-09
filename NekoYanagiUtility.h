@@ -43,6 +43,13 @@ struct ConstBufferDataViewProjection
 	NYMath::Vector3 cameraPos;
 };
 
+//ビルボード定数バッファ用データ構造体
+struct ParticleConstBuffData
+{
+	NYMath::Matrix4 mat;
+	NYMath::Matrix4 matBillboard;
+};
+
 //カメラ構造体
 struct WorldvViewProCamera
 {
@@ -114,4 +121,29 @@ struct TextureData
 	size_t width = 0;
 	// 縦幅
 	size_t height = 0;
+};
+
+// パーティクル1粒
+struct Particle
+{
+	// 座標
+	NYMath::Vector3 position = {};
+	// 速度
+	NYMath::Vector3 velocity = {};
+	// 加速度
+	NYMath::Vector3 accel = {};
+	// 現在フレーム
+	int frame = 0;
+	// 終了フレーム
+	int num_frame = 0;
+	// スケール
+	float scale = 1.0f;
+	// 初期値
+	float s_scale = 1.0f;
+	// 最終値
+	float e_scale = 0.0f;
+	// 色
+	NYMath::Vector4 color = { 1,1,1,1 };
+	NYMath::Vector4 s_color = { 1,0,0,1 };
+	NYMath::Vector4 e_color = { 1,1,1,1 };
 };

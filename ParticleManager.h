@@ -3,21 +3,28 @@
 #include "Shader.h"
 #include "Pipeline.h"
 #include "DirectXCommon.h"
-
+#include "WorldTransform.h"
 
 
 class ParticleManager
 {
-private:
-	static void CrreateCraphicsPipeline();
+public:
+	static void StaticInitialize(ID3D12Device* device, ID3D12GraphicsCommandList* cmdList);
 	static void LoadTexture(const wchar_t* texturename);
+private:
+	static void InitializeDescriptorHeap();
+	static void CreateCraphicsPipeline();
+
 	static void CreateModel();
 
-private:
-	void InitializeVerticesBuff();
-
 public:
-	void Draw();
+	void Draw(WorldTransform* transform);
+
+	void Update();
+
+	void Add(int life, NYMath::Vector3 position, NYMath::Vector3 velocity, NYMath::Vector3 accel, float start_scale, float end_scale, NYMath::Vector4 s_color, NYMath::Vector4 e_color);
+
+	void RandParticle();
 
 private:
 	static const int vertexCount = 1024;	// 頂点数
@@ -38,7 +45,13 @@ private:
 	static UINT descriptorHandleIncrementSize;
 	// 頂点データ配列
 	static VertexPos vertices[vertexCount];
-	static D3D12_VERTEX_BUFFER_VIEW vbView{};
+	static D3D12_VERTEX_BUFFER_VIEW vbView;
 
+	static NYMath::Matrix4 matView;
+	static NYMath::Matrix4 matProjection;
+
+private:
+	Microsoft::WRL::ComPtr<ID3D12Resource> constBuff;
+	std::forward_list<Particle> particles;
 };
 

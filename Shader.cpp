@@ -180,7 +180,7 @@ void Shader::CreateParticleShade(ComPtr<ID3DBlob>& vsBlob, ComPtr<ID3DBlob>& psB
 		D3D_COMPILE_STANDARD_FILE_INCLUDE,	// インクルード可能にする
 		"main", "ps_5_0",	// エンドリーポイント名、シェーダモデル指定
 		D3DCOMPILE_DEBUG | D3DCOMPILE_SKIP_OPTIMIZATION, // デバック用設定
-		0, &gsBlob, &errorBlob
+		0, &psBlob, &errorBlob
 	);
 
 	// エラーなら

@@ -5,12 +5,18 @@
 
 class WorldTransform
 {
-private: //メンバ関数
-	
+
+public:
+	//初期化
 	void Initialize();
+	//更新
+	void Update(Camera* camera,bool billboradFlag = false);
 
-	void Update(Camera* camera);
+	//ゲッター
+	D3D12_GPU_VIRTUAL_ADDRESS GetGpuAddress();
 
+private: //メンバ関数
+	//定数バッファ生成
 	void CreateConstBuffer();
 
 private:

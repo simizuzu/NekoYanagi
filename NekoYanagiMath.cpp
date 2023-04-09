@@ -103,7 +103,6 @@ NYMath::Matrix4 NYMath::MakePerspective(float fogAngleY, float aspectRatio, floa
 	float cosFov = std::cos(0.5f * fogAngleY);
 
 	float height = cosFov / sinFov;
-	float width = height / aspectRatio;
 	float range = farZ / (farZ - nearZ);
 
 	Matrix4 matrix;

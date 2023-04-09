@@ -5,7 +5,7 @@ void WorldTransform::Initialize()
 	CreateConstBuffer();
 }
 
-void WorldTransform::Update(Camera* camera)
+void WorldTransform::Update(Camera* camera, bool billboradFlag)
 {
 	HRESULT result;
 	NYMath::Matrix4 matScale, matRot, matTrans;
@@ -29,15 +29,24 @@ void WorldTransform::Update(Camera* camera)
 		matWorld *= parent->matWorld;
 	}
 
-	const NYMath::Matrix4 matView = camera->GetMatView();
-	const NYMath::Matrix4 matProjection = camera->GetMatProjection();
+	if (!billboradFlag)
+	{
+		const NYMath::Matrix4 matView = camera->GetMatView();
+		const NYMath::Matrix4 matProjection = camera->GetMatProjection();
 
-	//定数バッファへデータ転送
-	ConstBufferDataWorldTransform* constMap = nullptr;
-	result = constBuffer_->Map(0, nullptr, (void**)&constMap);
-	assert(SUCCEEDED(result));
-	constMap->mat = matWorld * matView * matProjection;
-	constBuffer_->Unmap(0, nullptr);
+		//定数バッファへデータ転送
+		ConstBufferDataWorldTransform* constMap = nullptr;
+		result = constBuffer_->Map(0, nullptr, (void**)&constMap);
+		assert(SUCCEEDED(result));
+		constMap->mat = matWorld * matView * matProjection;
+		constBuffer_->Unmap(0, nullptr);
+	}
+
+}
+
+D3D12_GPU_VIRTUAL_ADDRESS WorldTransform::GetGpuAddress()
+{
+	return constBuffer_->GetGPUVirtualAddress();
 }
 
 void WorldTransform::CreateConstBuffer()

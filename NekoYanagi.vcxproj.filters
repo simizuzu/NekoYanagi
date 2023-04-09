@@ -275,9 +275,6 @@
     <FxCompile Include="Resources\shaders\ParticlePS.hlsl">
       <Filter>Engine\シェーダーファイル</Filter>
     </FxCompile>
-    <FxCompile Include="Resources\shaders\PaticleVS.hlsl">
-      <Filter>Engine\シェーダーファイル</Filter>
-    </FxCompile>
     <FxCompile Include="Resources\shaders\SpritePS.hlsl">
       <Filter>Engine\シェーダーファイル</Filter>
     </FxCompile>
@@ -285,6 +282,9 @@
       <Filter>Engine\シェーダーファイル</Filter>
     </FxCompile>
     <FxCompile Include="Resources\shaders\ParticleGS.hlsl">
+      <Filter>Engine\シェーダーファイル</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\shaders\ParticleVS.hlsl">
       <Filter>Engine\シェーダーファイル</Filter>
     </FxCompile>
   </ItemGroup>

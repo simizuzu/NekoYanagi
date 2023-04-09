@@ -1,5 +1,7 @@
 #pragma once
 #include "Camera.h"
+#include "ParticleManager.h"
+#include "WorldTransform.h"
 
 class GameScene
 {
@@ -21,7 +23,10 @@ public: //ƒƒ“ƒo•Ï”
 
 private: //ƒƒ“ƒo•Ï”
 	std::unique_ptr<Camera> camera_;
+	std::unique_ptr<ParticleManager> particles;
 
+	NYMath::Vector3 cameraEye;
+	WorldTransform transform;
 private:
 	GameScene(const GameScene&) = delete;
 	const GameScene& operator=(const GameScene&) = delete;

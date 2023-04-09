@@ -6,6 +6,7 @@
 #include "FPS.h"
 #include "GameScene.h"
 #include "Input.h"
+#include "ParticleManager.h"
 
 int WINAPI WinMain(_In_ HINSTANCE, _In_opt_ HINSTANCE, _In_ LPSTR, _In_ int)
 {
@@ -14,6 +15,7 @@ int WINAPI WinMain(_In_ HINSTANCE, _In_opt_ HINSTANCE, _In_ LPSTR, _In_ int)
 	ImGuiManager* imGuiManager = ImGuiManager::GetInstance();
 	Input* input = Input::GetInstance();
 
+	
 	FPS* fps = new FPS();
 	GameScene* gameScene = new GameScene();
 
@@ -24,8 +26,11 @@ int WINAPI WinMain(_In_ HINSTANCE, _In_opt_ HINSTANCE, _In_ LPSTR, _In_ int)
 	imGuiManager->Initialize(winApp, dxCommon);
 	input->Initialize();
 
-	gameScene->Initalize();
 
+
+
+	ParticleManager::StaticInitialize(dxCommon->GetDevice(),dxCommon->GetCommandList());
+	gameScene->Initalize();
 	while (true)
 	{
 		//XV
