@@ -4,6 +4,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.4.33403.182
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NekoYanagi", "NekoYanagi.vcxproj", "{A021E384-BCE4-4057-9E70-056245BB950F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{371B9FA9-4C90-4AC6-A123-ACED756D6C77} = {371B9FA9-4C90-4AC6-A123-ACED756D6C77}
+		{87C7A5ED-2C06-4FA9-8237-9922BA531380} = {87C7A5ED-2C06-4FA9-8237-9922BA531380}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "External", "External", "{F747AAD1-896B-4DE3-9A52-1796DC84EB35}"
 EndProject
