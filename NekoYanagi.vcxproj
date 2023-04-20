@@ -75,7 +75,7 @@
     <IncludePath>$(SolutionDir)lib\External\DirectXTex;$(SolutionDir)lib\External\imgui;$(SolutionDir)imgui;$(SolutionDir)DirectXTex</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>$(SolutionDir)lib\External\DirectXTex;$(SolutionDir)lib\External\imgui;$(SolutionDir)imgui;$(SolutionDir)DirectXTex</IncludePath>
+    <IncludePath>$(SolutionDir)lib\External\DirectXTex;$(SolutionDir)lib\External\imgui</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
