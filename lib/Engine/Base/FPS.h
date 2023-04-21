@@ -1,5 +1,9 @@
 #pragma once
-#include "AvoidWarning.h"
+#pragma warning(push)
+#pragma warning(disable: 4365)
+#include <chrono>
+#include <thread>
+#pragma warning(pop)
 
 class FPS
 {

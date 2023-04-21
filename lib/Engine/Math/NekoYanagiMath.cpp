@@ -1,4 +1,9 @@
 #include "NekoYanagiMath.h"
+#include <cmath>
+
+#pragma warning(push)
+#include <cassert>
+#pragma warning(pop)
 
 NYMath::Matrix4 NYMath::MakeIdentity()
 {

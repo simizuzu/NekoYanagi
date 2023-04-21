@@ -1,6 +1,18 @@
 #pragma once
-#include "AvoidWarning.h"
 #include "WinApp.h"
+
+#pragma warning(push)
+#pragma warning(disable: 4514)
+#pragma warning(disable: 4668)
+#pragma warning(disable: 4820)
+
+#define DIRECTINPUT_VERSION 0x0800 // DirectInputのバージョン指定
+#include <dinput.h>
+#include <DirectXMath.h>
+#include <array>
+#include <wrl.h>
+#include <cassert>
+#pragma warning(pop)
 
 #pragma comment(lib,"dinput8.lib")
 #pragma comment(lib,"dxguid.lib")

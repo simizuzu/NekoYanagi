@@ -1,7 +1,16 @@
 #pragma once
-#include "AvoidWarning.h"
 #include "DirectXCommon.h"
 #include "NekoYanagiUtility.h"
+
+#pragma warning(push)
+#pragma warning(disable: 4061)
+#pragma warning(disable: 4365)
+#pragma warning(disable: 4514)
+#pragma warning(disable: 4820)
+#include <wrl.h>
+#include <array>
+#include <d3dx12.h>
+#pragma warning(pop)
 
 class Pipeline
 {

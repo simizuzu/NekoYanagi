@@ -1,9 +1,13 @@
 #pragma once
-#include "AvoidWarning.h"
 #include "DirectXCommon.h"
 #include "WinApp.h"
 #include "NekoYanagiMath.h"
 #include "NekoYanagiUtility.h"
+
+#pragma warning(push)
+#include <wrl.h>
+#include <d3d12.h>
+#pragma warning(pop)
 
 class Camera
 {

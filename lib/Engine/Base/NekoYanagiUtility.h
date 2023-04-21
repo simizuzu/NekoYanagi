@@ -1,10 +1,14 @@
 #pragma once
-#include "AvoidWarning.h"
 
 #include "Matrix4.h"
 #include "Vector2.h"
 #include "Vector3.h"
 #include "Vector4.h"
+
+#pragma warning(push)
+#include <wrl.h>
+#include <d3d12.h>
+#pragma warning(pop)
 
 //2D変換行列(定数バッファ)
 struct ConstBufferData

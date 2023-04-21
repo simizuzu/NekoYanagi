@@ -1,7 +1,11 @@
 #pragma once
-#include "AvoidWarning.h"
 #include "Camera.h"
 #include "NekoYanagiUtility.h"
+
+#pragma warning(push)
+#include <d3d12.h>
+#include <wrl.h>
+#pragma warning(pop)
 
 class WorldTransform
 {

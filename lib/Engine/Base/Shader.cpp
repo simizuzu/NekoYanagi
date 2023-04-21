@@ -1,5 +1,12 @@
 #include "Shader.h"
 
+#pragma warning(push)
+#pragma warning(disable: 4820)
+#include <cassert>
+#include <string>
+#include <d3dcompiler.h>
+#pragma warning(pop)
+
 #pragma comment(lib,"d3dcompiler.lib")
 
 void Shader::CreateSpriteShade(ComPtr<ID3DBlob>& vsBlob, ComPtr<ID3DBlob>& psBlob)

@@ -2,6 +2,10 @@
 #include "resouce.h"
 #include "Input.h"
 
+#pragma warning(push)
+#include <imgui_impl_win32.h>
+#pragma warning(pop)
+
 #pragma comment(lib,"winmm.lib")
 
 WinApp::WinApp() {}

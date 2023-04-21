@@ -1,5 +1,13 @@
 #include "ImGuiManager.h"
 
+#pragma warning(push)
+#pragma warning(disable: 4514)
+#pragma warning(disable: 4820)
+
+#include <imgui_impl_win32.h>
+#include <imgui_impl_dx12.h>
+#pragma warning(pop)
+
 ImGuiManager::ImGuiManager() {}
 ImGuiManager::~ImGuiManager(){}
 

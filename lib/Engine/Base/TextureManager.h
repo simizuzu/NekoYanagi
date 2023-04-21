@@ -2,7 +2,16 @@
 #include "DirectXCommon.h"
 #include "NekoYanagiUtility.h"
 
-#include "AvoidWarning.h"
+#pragma warning(push)
+#pragma warning(disable: 4514)
+#pragma warning(disable: 4668)
+#pragma warning(disable: 4820)
+
+#include <d3d12.h>
+#include <wrl.h>
+#include <DirectXTex.h>
+#include <array>
+#pragma warning(pop)
 
 /// <summary>
 /// テクスチャマネージャ

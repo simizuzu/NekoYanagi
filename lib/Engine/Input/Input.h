@@ -1,6 +1,10 @@
 #pragma once
-#include "AvoidWarning.h"
 #include "Keyboard.h"
+
+#pragma warning(push)
+#pragma warning(disable: 4365)
+#include <memory>
+#pragma warning(pop)
 
 class Input
 {

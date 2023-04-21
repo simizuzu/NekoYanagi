@@ -3,7 +3,10 @@
 #include "Vector3.h"
 #include "Matrix4.h"
 
-#include "AvoidWarning.h"
+#pragma warning(push)
+#pragma warning(disable: 4365)
+#include <vector>
+#pragma warning(pop)
 
 namespace NYMath
 {

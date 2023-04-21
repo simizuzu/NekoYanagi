@@ -1,5 +1,6 @@
 #include "Pipeline.h"
 
+
 void Pipeline::CreateSpritePipeline(ID3DBlob* vsBlob, ID3DBlob* psBlob, BlendMode blend, ID3D12Device* device, std::array<RootSigSetPip, 6>& pipeline)
 {
 	HRESULT result;

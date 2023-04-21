@@ -1,6 +1,5 @@
 #pragma once
-
-#include "AvoidWarning.h"
+#include "TextureManager.h"
 
 class Shader
 {

@@ -1,6 +1,16 @@
 #pragma once
-#include "AvoidWarning.h"
 #include "WinApp.h"
+
+#pragma warning(push)
+#pragma warning(disable: 4514)
+#pragma warning(disable: 4820)
+
+#include <Windows.h>
+#include <d3d12.h>
+#include <vector>
+#include <dxgi1_6.h>
+#include <cassert>
+#pragma warning(pop)
 
 class DirectXCommon
 {

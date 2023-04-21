@@ -1,5 +1,20 @@
 #pragma once
-#include "AvoidWarning.h"
+#pragma warning(push)
+#pragma warning(disable: 4265)
+#pragma warning(disable: 4365)
+#pragma warning(disable: 4625)
+#pragma warning(disable: 4626)
+#pragma warning(disable: 4668)
+#pragma warning(disable: 4820)
+#pragma warning(disable: 5039)
+#pragma warning(disable: 5204)
+#pragma warning(disable: 5220)
+
+#include <Windows.h>
+#include <cstdint>
+#include <string>
+#include <wrl.h>
+#pragma warning(pop)
 
 class WinApp
 {

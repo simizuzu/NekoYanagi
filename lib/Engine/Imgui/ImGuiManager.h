@@ -1,7 +1,10 @@
 #pragma once
-#include "AvoidWarning.h"
 #include "DirectXCommon.h"
 #include "WinApp.h"
+
+#pragma warning(push)
+#include <wrl.h>
+#pragma warning(pop)
 
 class ImGuiManager final
 {
