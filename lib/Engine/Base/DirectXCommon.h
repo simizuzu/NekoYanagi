@@ -63,6 +63,9 @@ private:
 	void EnableDebugLayer();
 	void BreakOnSeverity();
 
+	//メモリリーク確認用関数
+	void DebugInterface();
+
 	static DirectXCommon* dxCommon_;
 	WinApp* winApp_ = nullptr;
 

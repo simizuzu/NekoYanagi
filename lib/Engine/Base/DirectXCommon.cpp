@@ -7,7 +7,9 @@ using namespace Microsoft::WRL;
 DirectXCommon* DirectXCommon::dxCommon_ = nullptr;
 
 DirectXCommon::DirectXCommon() {}
-DirectXCommon::~DirectXCommon() {}
+DirectXCommon::~DirectXCommon() {
+	//DebugInterface();
+}
 
 void DirectXCommon::Initialize()
 {
@@ -211,6 +213,8 @@ void DirectXCommon::InitializeDepthBuffer()
 		&dsvDesc,
 		dsvHeap->GetCPUDescriptorHandleForHeapStart());
 	assert(SUCCEEDED(result));
+
+	depthBuff->SetName(L"dxcommonDepth");
 }
 
 void DirectXCommon::InitializeFence()
@@ -237,6 +241,9 @@ void DirectXCommon::PreDraw(WinApp* winApp)
 	// 描画先変更
 	rtvHandle = rtvHeap->GetCPUDescriptorHandleForHeapStart();
 	rtvHandle.ptr += (static_cast<unsigned long long>(bbIndex)) * device->GetDescriptorHandleIncrementSize(rtvHeapDesc.Type);
+
+	device->SetName(L"DxCommonDevice");
+
 	//深度ステンシルビュー用デスクプリタヒープのハンドルを所得
 	D3D12_CPU_DESCRIPTOR_HANDLE dsvHandle = dsvHeap->GetCPUDescriptorHandleForHeapStart();
 	commandList->OMSetRenderTargets(1, &rtvHandle, false, &dsvHandle);
@@ -371,6 +378,27 @@ void DirectXCommon::BreakOnSeverity()
 		infoQueue->SetBreakOnSeverity(D3D12_MESSAGE_SEVERITY_CORRUPTION, true);
 		infoQueue->SetBreakOnSeverity(D3D12_MESSAGE_SEVERITY_ERROR, true);
 	}
+}
+void DirectXCommon::DebugInterface()
+{
+	/*dxgiFactory.Reset();
+	swapChain.Reset();
+	cmdAllocator.Reset();
+	commandList.Reset();
+	commandQueue.Reset();
+	rtvHeap.Reset();
+	fence.Reset();
+	depthBuff.Reset();
+	dsvHeap.Reset();
+	backBuffers.clear();
+
+	ID3D12DebugDevice* debugInterface;
+
+	if (SUCCEEDED(device.Get()->QueryInterface(&debugInterface)))
+	{
+		debugInterface->ReportLiveDeviceObjects(D3D12_RLDO_DETAIL | D3D12_RLDO_IGNORE_INTERNAL);
+		debugInterface->Release();
+	}*/
 }
 #pragma endregion
 

@@ -21,6 +21,18 @@ VertexPos ParticleManager::vertices[vertexCount];
 NYMath::Matrix4 ParticleManager::matView;
 NYMath::Matrix4 ParticleManager::matProjection{};
 
+ParticleManager::~ParticleManager()
+{
+	device_.Reset();
+	descHeap.Reset();
+	cmdList_.Reset();
+	vertBuff.Reset();
+	texbuff.Reset();
+
+	pip.pipelineState.Reset();
+	pip.rootSignature.Reset();
+}
+
 void ParticleManager::StaticInitialize(ID3D12Device* device, ID3D12GraphicsCommandList* cmdList)
 {
 	assert(device);
@@ -208,8 +220,9 @@ void ParticleManager::Draw(WorldTransform* transform)
 	{
 		cmdList_->DrawInstanced(vertexCount, 1, 0, 0);
 	}
-}
 
+	cmdList_->SetName(L"ParticleCmdList");
+}
 
 void ParticleManager::LoadTexture(const wchar_t* texturename)
 {
@@ -251,6 +264,7 @@ void ParticleManager::LoadTexture(const wchar_t* texturename)
 		nullptr, IID_PPV_ARGS(&texbuff));
 	assert(SUCCEEDED(result));
 
+	texbuff->SetName(L"ParticleTexbuff");
 
 	// テクスチャバッファにデータ転送
 	for (size_t i = 0; i < metadata.mipLevels; i++) {
@@ -268,6 +282,8 @@ void ParticleManager::LoadTexture(const wchar_t* texturename)
 	// シェーダリソースビュー作成
 	cpuDescHandleSRV = CD3DX12_CPU_DESCRIPTOR_HANDLE(descHeap->GetCPUDescriptorHandleForHeapStart(), 0, descriptorHandleIncrementSize);
 	gpuDescHandleSRV = CD3DX12_GPU_DESCRIPTOR_HANDLE(descHeap->GetGPUDescriptorHandleForHeapStart(), 0, descriptorHandleIncrementSize);
+
+	descHeap->SetName(L"ParticleDescHeap");
 
 	D3D12_SHADER_RESOURCE_VIEW_DESC srvDesc{}; // 設定構造体
 	D3D12_RESOURCE_DESC resDesc = texbuff->GetDesc();
@@ -299,6 +315,8 @@ void ParticleManager::CreateModel()
 		&heapProps, D3D12_HEAP_FLAG_NONE, &resourceDesc, D3D12_RESOURCE_STATE_GENERIC_READ, nullptr,
 		IID_PPV_ARGS(&vertBuff));
 	assert(SUCCEEDED(result));
+
+	device_->SetName(L"ParticleDevice");
 
 	// 頂点バッファへのデータ転送
 	VertexPos* vertMap = nullptr;

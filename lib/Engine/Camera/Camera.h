@@ -42,6 +42,9 @@ private:
 	float distance = 50.0f;
 
 public:
+	Camera() = default;
+	~Camera();
+
 	/// <summary>
 	/// ‰Šú‰»
 	/// </summary>

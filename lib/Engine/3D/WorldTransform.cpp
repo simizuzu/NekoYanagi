@@ -75,4 +75,5 @@ void WorldTransform::CreateConstBuffer()
 		nullptr,
 		IID_PPV_ARGS(&constBuffer_));
 	assert(SUCCEEDED(result));
+	constBuffer_->SetName(L"WorldTransform");
 }

@@ -26,6 +26,9 @@ public:
 
 	void RandParticle();
 
+	ParticleManager() = default;
+	~ParticleManager();
+
 private:
 	static const int vertexCount = 1024;	// í∏ì_êî
 
@@ -51,7 +54,7 @@ private:
 	static NYMath::Matrix4 matProjection;
 
 private:
-	Microsoft::WRL::ComPtr<ID3D12Resource> constBuff;
+	//Microsoft::WRL::ComPtr<ID3D12Resource> constBuff;
 	std::forward_list<Particle> particles;
 };
 

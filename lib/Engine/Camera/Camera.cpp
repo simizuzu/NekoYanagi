@@ -3,6 +3,11 @@
 ViewProjection viewPro;
 ConstBufferDataViewProjection ConstMap;
 
+Camera::~Camera()
+{
+	viewPro.constBuff_.Reset();
+}
+
 void Camera::Initialize()
 {
 	eye_ = { 0,0,-distance };//視点座標
@@ -62,6 +67,8 @@ void Camera::Map()
 	//定数バッファのマッピング
 	result = viewPro.constBuff_->Map(0, nullptr, (void**)&viewPro.constBuffMap);//マッピング
 	assert(SUCCEEDED(result));
+
+	viewPro.constBuff_->SetName(L"viewProConstBuff");
 }
 
 void Camera::UpdateMatrix()
