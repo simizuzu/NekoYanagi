@@ -4,7 +4,6 @@
 #pragma comment(lib, "dxgi.lib")
 
 using namespace Microsoft::WRL;
-DirectXCommon* DirectXCommon::dxCommon_ = nullptr;
 
 DirectXCommon::DirectXCommon() {}
 DirectXCommon::~DirectXCommon() {}
@@ -323,11 +322,6 @@ void DirectXCommon::SetBackScreenColor(float red, float green, float blue, float
 	clearColor[1] = green;
 	clearColor[2] = blue;
 	clearColor[3] = alpha;
-}
-
-void DirectXCommon::Delete()
-{
-	delete dxCommon_;
 }
 
 DirectXCommon* DirectXCommon::GetInstance()

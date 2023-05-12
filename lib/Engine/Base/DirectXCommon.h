@@ -2,7 +2,7 @@
 #include "AvoidWarning.h"
 #include "WinApp.h"
 
-class DirectXCommon
+class DirectXCommon final
 {
 private:
 	//DirectX‰Šú‰»ˆ—
@@ -53,7 +53,6 @@ private:
 	void EnableDebugLayer();
 	void BreakOnSeverity();
 
-	static DirectXCommon* dxCommon_;
 	WinApp* winApp_ = nullptr;
 
 public:
