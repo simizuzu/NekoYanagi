@@ -201,6 +201,12 @@
     <ClCompile Include="main.cpp">
       <Filter>Engine</Filter>
     </ClCompile>
+    <ClCompile Include="NekoYanagiModel.cpp">
+      <Filter>Engine\ソース ファイル\3D\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="FBXLoader.cpp">
+      <Filter>Engine\ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="lib\Engine\2D\Sprite\Sprite.h">
@@ -277,6 +283,12 @@
     </ClInclude>
     <ClInclude Include="resouce.h">
       <Filter>Engine\リソース ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="NekoYanagiModel.h">
+      <Filter>Engine\ヘッダー ファイル\3D\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="FBXLoader.h">
+      <Filter>Engine\ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
