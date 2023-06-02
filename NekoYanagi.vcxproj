@@ -154,7 +154,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="FBXLoader.cpp" />
+    <ClCompile Include="FbxLoader.cpp" />
     <ClCompile Include="lib\Engine\2D\Sprite\Sprite.cpp" />
     <ClCompile Include="lib\Engine\2D\Sprite\Sprite2D.cpp" />
     <ClCompile Include="lib\Engine\3D\Particle\ParticleManager.cpp" />
@@ -181,7 +181,7 @@
     <ClCompile Include="NekoYanagiModel.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="FBXLoader.h" />
+    <ClInclude Include="FbxLoader.h" />
     <ClInclude Include="lib\Engine\2D\Sprite\Sprite.h" />
     <ClInclude Include="lib\Engine\2D\Sprite\Sprite2D.h" />
     <ClInclude Include="lib\Engine\3D\Particle\ParticleManager.h" />

@@ -204,7 +204,7 @@
     <ClCompile Include="NekoYanagiModel.cpp">
       <Filter>Engine\ソース ファイル\3D\Model</Filter>
     </ClCompile>
-    <ClCompile Include="FBXLoader.cpp">
+    <ClCompile Include="FbxLoader.cpp">
       <Filter>Engine\ソース ファイル</Filter>
     </ClCompile>
   </ItemGroup>
@@ -287,7 +287,7 @@
     <ClInclude Include="NekoYanagiModel.h">
       <Filter>Engine\ヘッダー ファイル\3D\Model</Filter>
     </ClInclude>
-    <ClInclude Include="FBXLoader.h">
+    <ClInclude Include="FbxLoader.h">
       <Filter>Engine\ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>
