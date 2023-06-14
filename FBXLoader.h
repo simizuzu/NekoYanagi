@@ -32,6 +32,7 @@ private:
 		aiProcess_ConvertToLeftHanded;//左手系に
 	char pad3[4] = {};
 
+
 public:
 	/// <summary>
 	/// シングルトンインスタンスの取得
